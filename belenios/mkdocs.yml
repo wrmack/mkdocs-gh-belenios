@@ -1,0 +1,57 @@
+site_name: Belenios on AWS
+nav: 
+  - Workstation:
+    - Development setup: index.md    
+    - Install Belenios: install/install.md
+    - Prepare squashfs image: install/preparation.md
+    - Troubleshooting: 
+      - Conatainers: install/troubleshoot/containers.md
+      - My changes: install/troubleshoot/my_changes.md
+      - SELinux: install/troubleshoot/selinux.md
+  - AWS:
+    - Deploy: aws/deploy.md
+    - Set up email: aws/email.md
+    - Set up DNS: aws/dns.md
+    - Troubleshooting:
+      - msmtp: aws/troubleshoot/msmtp.md
+
+  
+theme:
+  name: material
+  palette: 
+    
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        
+  features:
+    - content.code.copy
+#    - navigation.sections 
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - toc:
+      title: 'On this page'
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - admonition
+  - def_list
+  - footnotes
+  - tables
