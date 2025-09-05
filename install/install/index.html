@@ -1111,10 +1111,10 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">source</span><span class="w"> </span>./env.sh
 </span></code></pre></div>
 <h2 id="optional-ocaml-lsp-server">Optional - ocaml-lsp-server</h2>
-<p>If using VSCode install ocaml-lsp-server and add the OCaml extension to VSCode</p>
+<p>If using VSCode install ocaml-lsp-server and add the official OCaml Platform extension to VSCode.</p>
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>opam<span class="w"> </span>install<span class="w"> </span>ocaml-lsp-server<span class="w"> </span>ocamlformat
 </span></code></pre></div>
-<code>ocaml-lsp-server</code> inherits its knowledge of switches from the environment VSCode is started in. It may be necessary, before starting VSCode, in at terminal change to the belenios root, do <code>source ./env.sh</code> to set the environment then start VSCode manually:</p>
+<code>ocaml-lsp-server</code> inherits its knowledge of opam switches from the environment VSCode is started in. Belenios uses its own switch in a customised directory (.belenios in your home folder). It may be necessary to set the environment before starting VSCode. In a terminal change to the belenios root, do <code>source ./env.sh</code> to set the environment then start VSCode manually from the same terminal so it inherits the environment you have just set:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># cd to belenios root</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">source</span><span class="w"> </span>./env.sh.<span class="w"> </span><span class="c1"># set the ocaml environment</span>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>code<span class="w">             </span><span class="c1"># start VSCode</span>
