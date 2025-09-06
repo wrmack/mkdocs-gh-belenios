@@ -9,25 +9,21 @@
       
       
       
-        <link rel="prev" href="../../auth/">
       
       
-        <link rel="next" href="../../../how/overview/">
-      
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>msmtp - Belenios on AWS</title>
+        <title>OpenID Connect - Belenios on AWS</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#troubleshoot-msmtp" class="md-skip">
+        <a href="#openid-connect" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +86,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Belenios on AWS" class="md-header__button md-logo" aria-label="Belenios on AWS" data-md-component="logo">
+    <a href="../.." title="Belenios on AWS" class="md-header__button md-logo" aria-label="Belenios on AWS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              msmtp
+              OpenID Connect
             
           </span>
         </div>
@@ -214,7 +210,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Belenios on AWS" class="md-nav__button md-logo" aria-label="Belenios on AWS" data-md-component="logo">
+    <a href="../.." title="Belenios on AWS" class="md-nav__button md-logo" aria-label="Belenios on AWS" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -270,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -293,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/install/" class="md-nav__link">
+      <a href="../../install/install/" class="md-nav__link">
         
   
   
@@ -316,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/preparation/" class="md-nav__link">
+      <a href="../../install/preparation/" class="md-nav__link">
         
   
   
@@ -339,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/flow/" class="md-nav__link">
+      <a href="../../install/flow/" class="md-nav__link">
         
   
   
@@ -400,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/troubleshoot/containers/" class="md-nav__link">
+      <a href="../../install/troubleshoot/containers/" class="md-nav__link">
         
   
   
@@ -423,7 +419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/troubleshoot/my_changes/" class="md-nav__link">
+      <a href="../../install/troubleshoot/my_changes/" class="md-nav__link">
         
   
   
@@ -446,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../install/troubleshoot/selinux/" class="md-nav__link">
+      <a href="../../install/troubleshoot/selinux/" class="md-nav__link">
         
   
   
@@ -481,20 +477,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -510,7 +504,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             AWS
@@ -524,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../deploy/" class="md-nav__link">
+      <a href="../deploy/" class="md-nav__link">
         
   
   
@@ -547,7 +541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../email/" class="md-nav__link">
+      <a href="../email/" class="md-nav__link">
         
   
   
@@ -570,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/" class="md-nav__link">
+      <a href="../dns/" class="md-nav__link">
         
   
   
@@ -593,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../auth/" class="md-nav__link">
+      <a href="../auth/" class="md-nav__link">
         
   
   
@@ -613,20 +607,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -642,7 +634,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
@@ -653,32 +645,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    msmtp
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../troubleshoot/msmtp/" class="md-nav__link">
         
   
   
@@ -689,52 +659,6 @@
   
 
       </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#try-msmtp-from-inside-the-belenios-systemd-nspawn-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Try msmtp from inside the Belenios systemd-nspawn container
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -800,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how/overview/" class="md-nav__link">
+      <a href="../../how/overview/" class="md-nav__link">
         
   
   
@@ -823,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../how/webserver/" class="md-nav__link">
+      <a href="../../how/webserver/" class="md-nav__link">
         
   
   
@@ -868,38 +792,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to:
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#try-msmtp-from-inside-the-belenios-systemd-nspawn-container" class="md-nav__link">
-    <span class="md-ellipsis">
-      Try msmtp from inside the Belenios systemd-nspawn container
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -914,51 +806,7 @@
 
 
 
-<h1 id="troubleshoot-msmtp">Troubleshoot <code>msmtp</code></h1>
-<h2 id="how-to">How to:</h2>
-<h3 id="try-msmtp-from-inside-the-belenios-systemd-nspawn-container">Try msmtp from inside the Belenios systemd-nspawn container</h3>
-<p>In one terminal:</p>
-<ul>
-<li>log into the AWS EC2 instance</li>
-<li>start the belenios-container service if it is not already active</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>belenios-container@main.service
-</span></code></pre></div>
-<ul>
-<li>then:</li>
-</ul>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Get container name</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>machinectl<span class="w"> </span>list
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># MACHINE       CLASS     SERVICE        OS     VERSION ADDRESSES</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># belenios-main container systemd-nspawn debian 13      -</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Get shell access to the running container</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>sudo<span class="w"> </span>machinectl<span class="w"> </span>shell<span class="w"> </span>belenios-main
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># In the container, display server information</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>msmtp<span class="w"> </span>--serverinfo
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># Send an email message </span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># - simply provide recipient email address,</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c1">#   all other settings are taken from /etc/msmtprc</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c1"># - end message by pressing Control-d</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>msmtp<span class="w"> </span>recipient@example.com<span class="w"> </span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Subect:<span class="w"> </span>Test
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>This<span class="w"> </span>is<span class="w"> </span>a<span class="w"> </span><span class="nb">test</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>CTL-D
-</span></code></pre></div>
-<ul>
-<li>after sending an email check if it goes into the recipients spam folder</li>
-<li>check raw source of email of the received email for whether it passed checks for SPF, DKIM, DMARC</li>
-<li>in the raw source look for entries like this:</li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Authentication-Results: xxxxxxxxxxxxxxxx;
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a> dkim=pass header.i=xxxxxxxxxxxxx;
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a> dkim=pass header.i=xxxxxxxxxxxxx;
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a> spf=pass smtp.mailfrom=xxxxxxxxxxxx;
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a> dmarc=pass(p=QUARANTINE) header.from=xxxxxxxxxxx;
-</span></code></pre></div>
+<h1 id="openid-connect">OpenID Connect</h1>
 
 
 
@@ -1007,10 +855,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

@@ -338,6 +338,29 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../install/flow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Development workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -347,10 +370,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
         
           
-          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
             
   
   
@@ -363,8 +386,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
           </label>
@@ -916,17 +939,25 @@
 A valid "from" address having the same domain as the domain from which emails are sent is important to avoid emails being sent to spam.</p>
 <p>The domain should have SPF, DKIM and DMARC TXT records. If the domain is set up using Amazon Route 53 then configuring SES should provide these.</p>
 <h2 id="security-summary">Security summary</h2>
-<p>The msmtp settings ensure:
-- tls encryption is applied to emails
-- user authentication is by password</p>
-<p>Amazon settings:
- - SPF (Sender Policy Framework): 
-    - valid emails must come from domains authorised in this record (ie my domain: wrmack.com)
-    - this provides a check that someone else is not pretending to be me 
- - DKIM (DomainKeys Identified Mail): emails are digitally signed and DKIM holds the public key
- - DMARC (Domain-based Message Authentication, Reporting, and Conformance):
-    - tells receiving server what action to take if SPF and DKIM fail
-    - this might be to reject the email or quarantine it (send it to spam) </p>
+<p>The msmtp settings ensure:</p>
+<ul>
+<li>tls encryption is applied to emails</li>
+<li>user authentication is by password</li>
+</ul>
+<p>Amazon settings:</p>
+<ul>
+<li>SPF (Sender Policy Framework): <ul>
+<li>valid emails must come from domains authorised in this record (ie my domain: wrmack.com)</li>
+<li>this provides a check that someone else is not pretending to be me </li>
+</ul>
+</li>
+<li>DKIM (DomainKeys Identified Mail): emails are digitally signed and DKIM holds the public key</li>
+<li>DMARC (Domain-based Message Authentication, Reporting, and Conformance):<ul>
+<li>tells receiving server what action to take if SPF and DKIM fail</li>
+<li>this might be to reject the email or quarantine it (send it to spam) </li>
+</ul>
+</li>
+</ul>
 
 
 
