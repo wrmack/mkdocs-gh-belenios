@@ -437,6 +437,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inspecting-belenios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Belenios
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -961,6 +970,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#inspecting-belenios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inspecting Belenios
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1020,6 +1038,14 @@
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
 </span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Restart the Belenios service</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>belenios-container@main.service
+</span></code></pre></div>
+<h2 id="inspecting-belenios">Inspecting Belenios</h2>
+<p>When logged in to AWS inspect Belenios logs at <code>/srv/belenios-containers/main/belenios/var/</code>.</p>
+<p>To enter the running Belenios container:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>machinectl<span class="w"> </span>shell<span class="w"> </span>belenios-main
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># In the container</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>journalctl
 </span></code></pre></div>
 
 
