@@ -12,7 +12,7 @@
         <link rel="prev" href="../preparation/">
       
       
-        <link rel="next" href="../troubleshoot/containers/">
+        <link rel="next" href="../secrets/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -452,6 +452,29 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../secrets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Managing secrets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -461,10 +484,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
         
           
-          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
             
   
   
@@ -477,8 +500,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
           </label>
@@ -496,7 +519,7 @@
   
   
   <span class="md-ellipsis">
-    Conatainers
+    Containers
     
   </span>
   
@@ -955,13 +978,14 @@
 
 
 <h1 id="development-workflow">Development workflow</h1>
-<p>Once set up, ongoing workflow for developing Belenios.</p>
+<p>This sets out the ongoing workflow for developing Belenios once Belenios is installed.</p>
 <h2 id="start-vscode-manually">Start VSCode manually</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># If using a Fedora atomic desktop, enter your toolbox container where you have VSCode installed</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>toolbox<span class="w"> </span>enter<span class="w"> </span>devbox
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>&lt;path<span class="w"> </span>to<span class="w"> </span>belenios<span class="w"> </span>root&gt;
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">source</span><span class="w"> </span>env.sh
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>code
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># If using a Fedora atomic desktop, enter the toolbx </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># container where you have VSCode installed.</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>toolbox<span class="w"> </span>enter<span class="w"> </span>devbox
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">cd</span><span class="w"> </span>&lt;path<span class="w"> </span>to<span class="w"> </span>belenios<span class="w"> </span>root&gt;
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">source</span><span class="w"> </span>env.sh
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>code
 </span></code></pre></div>
 <h2 id="modify-belenios">Modify Belenios</h2>
 <p>Modify the code</p>
@@ -991,10 +1015,10 @@
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># Remove existing rootfs.squashfs</span>
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/srv/belenios-containers/main/rootfs.squashfs
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># Create a new rootfs.squashfs to link to new Belenios image</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># Create a new rootfs.squashfs to link to the new Belenios image</span>
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/srv/belenios-containers/main/belenios_XXXXXXXX.squashfs<span class="w"> </span>/srv/belenios-containers/main/rootfs.squashfs
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Restart Belenios</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># Restart the Belenios service</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>belenios-container@main.service
 </span></code></pre></div>
 
