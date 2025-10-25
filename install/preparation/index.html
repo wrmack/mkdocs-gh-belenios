@@ -865,12 +865,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how/webserver/" class="md-nav__link">
+      <a href="../../how/ocaml/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/ocsigen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ocsigen framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/follow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Follow the code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data storage
     
   </span>
   
@@ -979,7 +1048,7 @@
 
 <h1 id="prepare-a-squashfs-image">Prepare a squashfs image</h1>
 <h2 id="documentation">Documentation</h2>
-<p>The code in Belenios source code builds a squashfs image. Once this image is run as a container it provides the Belenios server. The source code to make the image is based on Debian Linux. The process for creating the image starts with creating a container running Debian. However I use podman rather than docker (podman is already installed in my Fedora setup). </p>
+<p>The code in Belenios source code builds a squashfs image. When this image is run as a container it provides the Belenios server. The source code to make the image is based on Debian Linux. The process for creating the image starts with creating a container running Debian. However I use podman rather than docker (podman is already installed in my Fedora setup). </p>
 <p>I amended some of the scripts - mainly to remove reference to backports (which seemed to be built for X64 systems). See <a href="https://github.com/wrmack/belenios">my fork</a> for all changed files (under <code>contrib/fedora</code>).</p>
 <h2 id="build-an-image">Build an image</h2>
 <p>I do the following from the OS host (ostree) using podman:</p>

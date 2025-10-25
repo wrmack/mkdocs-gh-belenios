@@ -12,7 +12,7 @@
         <link rel="prev" href="../../aws/troubleshoot/msmtp/">
       
       
-        <link rel="next" href="../webserver/">
+        <link rel="next" href="../ocaml/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -786,12 +786,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../webserver/" class="md-nav__link">
+      <a href="../ocaml/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ocsigen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ocsigen framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../follow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Follow the code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data storage
     
   </span>
   
@@ -846,13 +915,12 @@
 
 
 <h1 id="overview">Overview</h1>
-<p>Belenios uses the <a href="https://ocsigen.org/home/intro.html">Ocsigen framework</a> and its associated libraries (Eliom, Tyxml, Js_of_ocaml, Lwt) for the webserver.</p>
-<p>The web server, as configured by Belenios, provides an interface for an admin to create an election.</p>
+<p>The web server provides an interface for an admin to create an election.</p>
 <p>Voters are sent an email with a link to a voting page.</p>
-<p>A voter completes their vote unattached to the webserver. Their vote is encrypted and sent to the web server.</p>
-<p>A voter is able to check their encrypted vote is held by the server.</p>
+<p>A voter completes their vote in their browser, unattached to the webserver. Their vote is then encrypted.  The voter logs in to the server and submits their vote.</p>
+<p>The voter is provided a "fingerprint" of their vote. This is a long string which is a unique identifier. Using this fingerprint, the voter is able to check their encrypted vote is held by the server.</p>
 <p>When the election closes, votes are tallied.</p>
-<p>A voter can check their vote is among those tallied.</p>
+<p>A voter can check their vote is among those tallied by identifying their fingerprint in a list of fingerprints of all votes.</p>
 
 
 

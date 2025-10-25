@@ -836,12 +836,81 @@
   
   
     <li class="md-nav__item">
-      <a href="how/webserver/" class="md-nav__link">
+      <a href="how/ocaml/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how/ocsigen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ocsigen framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how/follow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Follow the code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="how/data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data storage
     
   </span>
   
@@ -923,12 +992,13 @@
 
 <h1 id="development-setup">Development setup</h1>
 <p>This documentation describes how I installed Belenios on a Fedora linux workstation on Arm64 and deployed it to an AWS EC2 instance running Amazon Linux 2023 also on Arm64. </p>
+<p>Its purpose is principally for my own reference but it may be helpful to others and ultimately assist the deployment of secure online voting applications.</p>
 <h2 id="my-setup">My setup</h2>
 <p>I have a Macbook Pro M1 (Arm64) running a Fedora Cosmic Atomic desktop in a virtual machine (VMWare Fusion). </p>
 <p>Fedora atomic desktops run an immutable file system based on ostree. (Only the /etc and /var directories are writable. The home directories are under /var/home.) Podman is preferred over Docker for containerisation.</p>
 <p>For development work I have created a 'toolbx' container (as recommended by Fedora for atomic desktops). I have installed VSCode, OCaml and the Linux packages recommended by Belenios in the toolbx container. In the toolbx container I use VSCode to make any modifications to Belenios.</p>
 <p>Any work involving containers I do from the Fedora OS host to avoid issues (if any exist) of running containers within containers. </p>
-<p>I have created a <a href="https://github.com/wrmack/belenios">fork of Belenios</a>, with my modifications under contrib/fedora.</p>
+<p>I have created a <a href="https://github.com/wrmack/belenios">fork of Belenios</a>, with my modifications for creating a squashfs image on a Fedora system, under contrib/fedora.</p>
 <h2 id="assumptions">Assumptions</h2>
 <ul>
 <li>Operating system is Fedora Linux</li>

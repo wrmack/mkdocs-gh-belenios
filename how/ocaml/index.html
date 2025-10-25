@@ -12,13 +12,15 @@
         <link rel="prev" href="../overview/">
       
       
+        <link rel="next" href="../ocsigen/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>Web server - Belenios on AWS</title>
+        <title>OCaml - Belenios on AWS</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#web-server" class="md-skip">
+        <a href="#ocaml" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Web server
+              OCaml
             
           </span>
         </div>
@@ -788,7 +790,7 @@
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
     
   </span>
   
@@ -801,7 +803,7 @@
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
     
   </span>
   
@@ -826,33 +828,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tyxml" class="md-nav__link">
+  <a href="#opam" class="md-nav__link">
     <span class="md-ellipsis">
-      Tyxml
+      opam
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Tyxml">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples-in-utop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples in utop:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#eliom" class="md-nav__link">
+  <a href="#dune" class="md-nav__link">
     <span class="md-ellipsis">
-      Eliom
+      dune
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocaml-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCaml libraries
     </span>
   </a>
   
@@ -862,6 +858,75 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ocsigen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ocsigen framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../follow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Follow the code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data storage
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -903,33 +968,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tyxml" class="md-nav__link">
+  <a href="#opam" class="md-nav__link">
     <span class="md-ellipsis">
-      Tyxml
+      opam
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Tyxml">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#examples-in-utop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples in utop:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#eliom" class="md-nav__link">
+  <a href="#dune" class="md-nav__link">
     <span class="md-ellipsis">
-      Eliom
+      dune
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocaml-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCaml libraries
     </span>
   </a>
   
@@ -951,65 +1010,19 @@
 
 
 
-<h1 id="web-server">Web server</h1>
-<p>The various components of the ocsigen framework are:</p>
+<h1 id="ocaml">OCaml</h1>
+<p>It is beyond the scope of these notes to explain the OCaml programming language. However, a couple of notes about opam, dune and OCaml libraries used by belenios.</p>
+<h2 id="opam">opam</h2>
+<p>Opam is a package manager for OCaml. Files in the belenios code which have the <code>.opam</code> extension relate to constructing belenios opam packages and are produced by dune.</p>
+<h2 id="dune">dune</h2>
+<p><a href="https://dune.build">dune</a> is a build system for OCaml. Typically each directory in the source code will have a dune file which sets out what is being built with the files / modules in that directory. The results of running <code>dune build</code> are found in the <code>_build</code> directory. </p>
+<h2 id="ocaml-libraries">OCaml libraries</h2>
+<p>The OCaml libraries used by belenios include:</p>
 <ul>
-<li>
-<dl>
-<dt>tyxml</dt>
-<dd>Provides the syntax for working with XML (including html) in OCaml</dd>
-</dl>
-</li>
-<li>
-<dl>
-<dt>eliom</dt>
-<dd>Provides libraries for server-client application programming</dd>
-</dl>
-</li>
-<li>
-<dl>
-<dt>js_of_ocaml</dt>
-<dd>Converts OCaml to javascript</dd>
-</dl>
-</li>
-<li>
-<dl>
-<dt>Lwt</dt>
-<dd>Provides libraries for asynchronous programming</dd>
-</dl>
-</li>
+<li>the Ocsigen framework (explained separately)</li>
+<li><a href="https://erratique.ch/software/cmdliner">cmdliner</a> which provides a command line interface</li>
+<li><a href="https://atd.readthedocs.io/en/latest/atdgen.html">atdgen</a> for managing json serialisation</li>
 </ul>
-<h2 id="tyxml">Tyxml</h2>
-<ul>
-<li>syntax for an element which has one child uses <code>()</code></li>
-<li>syntax for an element which may have more than one child uses the list syntax <code>[]</code></li>
-</ul>
-<p>Example: an <code>html</code> element has only one <code>head</code> element and only one <code>body</code> element; a <code>head</code> element has only one <code>title</code> element but also has other elements.</p>
-<h3 id="examples-in-utop">Examples in utop:</h3>
-<div class="language-ocaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">#</span> <span class="n">require</span> <span class="s2">&quot;tyxml&quot;</span><span class="o">;;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">open</span> <span class="nc">Tyxml</span><span class="o">;;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">let</span> <span class="n">mypage</span> <span class="o">=</span> <span class="nn">Html</span><span class="p">.</span><span class="o">(</span><span class="n">html</span> <span class="o">(</span><span class="n">head</span> <span class="o">(</span><span class="n">title</span> <span class="o">(</span><span class="n">txt</span> <span class="s2">&quot;My title&quot;</span><span class="o">))</span><span class="bp">[]</span><span class="o">)</span> <span class="o">(</span><span class="n">body</span> <span class="o">[</span><span class="n">div</span> <span class="o">[</span><span class="n">txt</span> <span class="s2">&quot;Hello world!&quot;</span><span class="o">]]));;</span>
-</span></code></pre></div>
-<p>This produces:</p>
-<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;&lt;</span><span class="nt">body</span><span class="p">&gt;&lt;</span><span class="nt">div</span><span class="p">&gt;</span>Hello world!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></code></pre></div>
-<p>The example above over multiple lines for easier reading</p>
-<div class="language-ocaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">let</span> <span class="n">mypage</span> <span class="o">=</span> <span class="nn">Html</span><span class="p">.</span><span class="o">(</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">html</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>   <span class="o">(</span><span class="n">head</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>       <span class="o">(</span><span class="n">title</span> <span class="o">(</span><span class="n">txt</span> <span class="s2">&quot;My title&quot;</span><span class="o">))</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>       <span class="bp">[]</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>   <span class="o">)</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>   <span class="o">(</span><span class="n">body</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>      <span class="o">[</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>         <span class="n">div</span> <span class="o">[</span><span class="n">txt</span> <span class="s2">&quot;Hello world!&quot;</span><span class="o">]</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>      <span class="o">]</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>   <span class="o">)</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="o">);;</span>
-</span></code></pre></div>
-<h2 id="eliom">Eliom</h2>
-<p>A key concept used by Eliom is that of a "service".  If the browser is directed to a web address, Eliom can register a service for the web address path. For example, the service might define the page html content for that path.</p>
 
 
 

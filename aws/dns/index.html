@@ -786,12 +786,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../../how/webserver/" class="md-nav__link">
+      <a href="../../how/ocaml/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Web server
+    OCaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/ocsigen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ocsigen framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/follow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Follow the code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how/data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data storage
     
   </span>
   
@@ -846,7 +915,7 @@
 
 
 <h1 id="dns-name-resolution">DNS name resolution</h1>
-<p>I had problems sending email. <code>msmtp</code> could not resolve the email endpoint name (<code>email-smtp.us-east-1.amazonaws.com</code>). The systemd Belenios service executes systemd-nspawn which can take arguments to point to a resolved configuration (see <code>man systemd-nspawn</code> and the <code>--resolv-conf</code> argument).  I could not get these options to work. In the end I hardwired what my EC2 uses into the post-inst.sh script in the squashfs image.</p>
+<p>I had problems sending email. <code>msmtp</code> could not resolve the email endpoint name (<code>email-smtp.us-east-1.amazonaws.com</code>). The systemd Belenios service executes systemd-nspawn which can take arguments to point to a <code>resolved</code> configuration (see <code>man systemd-nspawn</code> and the <code>--resolv-conf</code> option).  I could not get these options to work. In the end I hardwired what my EC2 uses into the post-inst.sh script in the squashfs image.</p>
 <p>What my EC2 instance uses for DNS resolution:</p>
 <p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">[</span>ec2-user@ip-172-31-30-217<span class="w"> </span>~<span class="o">]</span>$<span class="w"> </span>ls<span class="w"> </span>-al<span class="w"> </span>/etc/resolv.conf
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>lrwxrwxrwx.<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">32</span><span class="w"> </span>Jul<span class="w"> </span><span class="m">30</span><span class="w">  </span><span class="m">2024</span><span class="w"> </span>/etc/resolv.conf<span class="w"> </span>-&gt;<span class="w"> </span>/run/systemd/resolve/resolv.conf
